@@ -5,7 +5,7 @@ use App\Http\Controllers\JobController;
 use App\Http\Controllers\TestJobController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // Route::get('/jobs', function () {

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  @vite('resources/css/app.css')
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@yield('title', 'Workopia | Find or List a Job')</title>
+    <title>Workopia</title>
   </head>
 
   <body class="bg-gray-100">
     <x-header />
-    <main class="container mx-auto p-4 mt-4">@yield('content')</main>
-    <x-inputs.text />
+    <main class="container mx-auto p-4 mt-4">{{ $slot }}</main>
   </body>
 </html>
