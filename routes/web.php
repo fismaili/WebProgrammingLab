@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\JobController;
-use App\Http\Controllers\TestJobController;
+
 
 Route::get('/', function () {
     return view('home');
@@ -22,11 +22,11 @@ Route::get('/', function () {
 //     return view('jobs.jobs',compact('title', 'jobs'));
 // });
 
-Route::get('/jobs', [JobController::class, 'index']);
-Route::get('/jobs/{id}', [JobController::class, 'show']);
-Route::get('/jobs/create', [JobController::class, 'create']);
-Route::post('/jobs', [JobController::class, 'store']);
+// Route::get('/jobs', [JobController::class, 'index']);
+// Route::get('/jobs/{id}', [JobController::class, 'show']);
+// Route::get('/jobs/create', [JobController::class, 'create']);
+// Route::post('/jobs', [JobController::class, 'store']);
 
-Route::resource('testjob', TestJobController::class);
+Route::resource('job', JobController::class);
 
 

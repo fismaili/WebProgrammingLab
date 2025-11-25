@@ -1,9 +1,8 @@
 <x-layout>
   <ul>
-    @forelse($jobs as $job)
-    <li>{{ $job }}</li>
-    @empty
-    <li>No jobs found</li>
-    @endforelse
+   @foreach($jobs as $job)
+  <li>{{$job['title']}}</li>
+  <li>{{$job['description']}}</li>
+  @endforeach
   </ul>
 </x-layout>
